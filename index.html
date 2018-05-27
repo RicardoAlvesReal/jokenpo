@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>JOKENPO</title>
+</head>
+<center><h2 style="font-family: Verdana ">REGRAS!</h2></center>
+<center><p style="font-family: Arial ">Pedra ganha da tesoura (quebra a tesoura), Tesoura ganha do papel (corta o papel), Papel ganha da pedra (embrulha a pedra).</p></center>
+<body>
+<link href="estilo.css" rel="stylesheet">
+<div id="main">
+
+    <h1>Pedra, Papel e Tesoura</h1>
+
+    <label for="placar-jogador" id="label-jogador">Jogador</label>
+    <input type="text" id="placar-jogador" class="placar" readonly="readonly" value="0" />
+    X 
+    
+    <input type="text" id="placar-computador" class="placar" readonly="readonly" value="0" />
+    <label for="placar-computador">Computador</label>
+
+    <br /><br />
+
+    <select id="opcaojogador">
+        <option value=""> -- Escolha a opção -- </option>
+        <option value="pedra"> Pedra </option>
+        <option value="papel"> Papel </option>
+        <option value="tesoura"> Tesoura </option>
+    </select>
+
+    <input type="button" value="Jogar!" id="btn-action" />
+
+    <br /><br /><br />
+
+    <table>
+        <tr>
+            <th id="th-jogador">Jogador</th>
+            <td>&nbsp;</td>
+            <th>Computador</th>
+        </tr>
+        <tr>
+            <td id="cmp-jogador">--</td>
+            <td> X </td>
+            <td id="cmp-computador">--</td>
+        </tr>
+        <tr>
+            <th>Vencedor: </th>
+            <td>&nbsp;</td>
+            <td id="cmp-vencedor">--</td>
+        </tr>        
+    </table>
+
+</div>
+<script language="JavaScript" src="code.js"></script>
+</body>
+</html>
