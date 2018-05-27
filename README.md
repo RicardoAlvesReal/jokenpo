@@ -1,2 +1,2 @@
-# jokenpo
+# https://ricardoalvesreal.github.io/jokenpo/
 
